@@ -5,10 +5,7 @@
  */
 package systemsparser;
 
-/**
- *
- * @author Omar salem
- */
+
 import java.util.ArrayList;
 import java.util.Stack;
 
@@ -99,16 +96,16 @@ public class InToPost {
                 int operation = current.getMeaning();
                 if (!accumulator) {
                     Token val1 = theStack.pop();
-                    output = output.concat("LDA\t" + val1.getSpecifier() + "\n\n");
+                    output = output.concat("LDA\t" + val1.getSpecifier() + "\n");
                     accumulator = true;
                 }
                 Token val2 = theStack.pop();
                 switch (operation) {
                     case 13:    //operation is +
-                        output = output.concat("ADD\t" + val2.getSpecifier() + "\n\n");
+                        output = output.concat("ADD\t" + val2.getSpecifier()+ "\n");
                         break;
                     case 17:    // operation is *
-                        output = output.concat("MULT\t" + val2.getSpecifier() + "\n\n");
+                        output = output.concat("MULT\t" + val2.getSpecifier()+ "\n");
                         break;
                     default:
                         System.out.println("Unsupported operation");

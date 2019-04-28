@@ -7,10 +7,7 @@ package systemsparser;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author Omar salem
- */
+
 public class Factor extends Rule
 {
     private Token id;

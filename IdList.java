@@ -5,10 +5,7 @@
  */
 package systemsparser;
 
-/**
- *
- * @author Omar salem
- */
+
 import java.util.ArrayList;
 
 

@@ -12,10 +12,7 @@ import java.util.Hashtable;
 import java.util.Scanner;
 import java.util.Set;
 
-/**
- *
- * @author Omar salem
-*/
+
 
 public class LexicalAnalyzer {
 
